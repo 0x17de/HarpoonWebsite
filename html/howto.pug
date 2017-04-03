@@ -1,11 +1,9 @@
-h1#howto How To ...
+h1#howto How to ...
 
-h2 Compile Harpoon Server ...
+h2 Compile the Harpoon server ...
 h3 On Ubuntu
 
-apt-get install make cmake g++ git libircclient-dev libssl-dev libjsoncpp-dev libsoci-dev libpq-dev libz-dev python
+include ../gen/compile-on-ubuntu.sh
 
-git clone https://github.com/0x17de/Harpoon
-cd Harpoon/build
-cmake .. -DSeasocks_GIT=1
-make
+h2 Setup the first user on the server
+
