@@ -1,9 +1,30 @@
 h1#howto How to ...
 
+h2 Running Harpoon for the first time
+
+.
+  For the first run choose a working directory from where you start Harpoon.
+  In this directory Harpoon will create a config directory when following step "Configure Harpoon".
+  During that first configuration the first user account will be created.
+  After the configuration is done, just run Harpoon in the same working directory without parameters to run in normal mode.
+
 h2 Compile the Harpoon server ...
 h3 On Ubuntu
 
 include ../gen/compile-on-ubuntu.sh
 
-h2 Setup the first user on the server
+h2 Configure Harpoon
 
+.
+  This step is only required for the first time and will choose the current directory as the working directory for creating or modifying its configuration.
+  Another instance of Harpoon should not be running when calling #[b --setup].
+
+include ../gen/compile-on-ubuntu.sh
+
+h2 Setup the another user on the server
+
+.
+  New users can be configured and can then also login to Harpoon.
+  Another instance of Harpoon should not be running when calling #[b --genuser].
+
+include ../gen/compile-on-ubuntu.sh
